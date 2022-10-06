@@ -1,0 +1,75 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<header>
+  <h1 id="title">employee<br/>survey</h1>
+
+  <p id="description">
+    Please answer the questions truthfully, and click start to begin.
+  </p>
+  
+  <br/><a href="#name_container" class="next">Start</a>
+</header>
+
+<main>
+   <form id="survey-form">
+     <div class="container" id="name_container">
+       <label id="name-label" for="name"><h1>What's your name?</h1></label>
+       <span>This is just for our record, this is still anonymous feedback.</span>
+       <input type="name" id="name" placeholder="ie. John Smith" required>
+       <br/><a href="#email_container" class="next">Next</a>
+     </div>
+     
+     <div class="container" id="email_container">
+       <label id="email-label" for="email"><h1>...and your email?</h1></label>
+       <span>Again, this is just for our records. You will remain anonymous.</span>
+       <input type="email" id="email" placeholder="ie. name@email.com" required>
+       <br/><a href="#employee_container" class="next">Next</a>
+     </div>
+     
+     <div class="container" id="employee_container">
+       <label id="number-label" for="number"><h1>Enter your employee ID</h1></label>
+       <span>Just for our records. The questionaire will begin soon.</span>
+    <input type="number" id="number" min="1" max="500" placeholder="ie. 3289">
+       <br/><a href="#manager_container" class="next">Next</a>
+     </div>
+     
+     <div class="container" id="manager_container">
+       <label><h1>Select your manager</h1></label>
+       <span>Who do you report under?</span>
+        <select id="dropdown">
+          <option>John Smith</option>
+          <option>Captain Jack Sparrow</option>
+          <option>Bob Ross</option>
+        </select>
+       <br/><a href="#rate_container" class="next">Next</a>
+     </div>
+     
+     <div class="container" id="rate_container">
+       <label><h2>How likely would you recommend working here?</h2></label>
+        <label><input type="radio" name="rate" value="rate">Strongly Recommend</label>
+        <label><input type="radio" name="rate" value="rate">Slightly Recommend</label>
+        <label><input type="radio" name="rate" value="rate">Neutral</label>
+        <label><input type="radio" name="rate" value="rate">Wouldn't recommend</label>
+        <label><input type="radio" name="rate" value="rate">Strongly would not recommend</label>
+        <label><input type="radio" name="rate" value="rate">N/A</label>
+       <br/><a href="#feedback_container" class="next">Next</a>
+     </div>
+     
+     <div class="container" id="feedback_container">
+       <label><h2>What feedback has been helpful?</h2></label>
+        <label><input type="checkbox" value="music">Written</label>
+        <label><input type="checkbox" value="music">Verbal</label>
+        <label><input type="checkbox" value="music">Monthly Meetings</label>
+        <label><input type="checkbox" value="music">Weekly Meetings</label>
+        <label><input type="checkbox" value="music">Real Time Feedback</label>
+       <br/><a href="#about_container" class="next">Next</a>
+     </div>
+     
+     <div class="container" id="about_container">
+       <label><h2>Comments or Feedback</h2></label>
+       <span>Have anything else to add?</span>
+       <textarea></textarea>
+       <input type="submit" id="submit">
+     </div>
+  </form>
+</main>
