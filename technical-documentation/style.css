@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+body{background:#fff; margin:0;}
+*{scroll-behavior:smooth;}
+
+/* HEADER */
+#header {position:fixed; top:0; left:0;background:#fff; display:block; width:100%; background:rgba(11,120,189,100); z-index:3;}
+header img{padding-left:25%;}
+
+/* NAVIGATION */
+nav{float:right; padding-right:25%; padding-top:15px;}
+nav a{font-family:'raleway'; text-transform:uppercase; text-decoration:none; padding:0 1em; color:#fff; transition: all 1s ease-in-out;}
+nav a:hover{color:rgba(116,194,248,100);}
+
+/*Container */
+main{margin:0 auto; width:50%; font-family: "raleway"; z-index:1;}
+section{padding:1em; height:100vh; padding-top:60px;}
+iframe{height:80vh; width: 50vw; border:none;}
+
+/* PRICING */
+.product {display: flex; flex-direction: column; align-items: center; text-align: center; width: calc(100%/3 - 22px); margin: 10px; border: 1px solid #ddd; border-radius: 0.5em; float:left; margin-top:50px;}
+.product > .level {background-color: #ddd; color: #333; padding: 15px 0; width: 100%; text-transform: uppercase; font-weight: 700; font-family:raleway;}
+.product > h2 {margin-top: 15px;}
+.product > ol {margin: 15px 0;}
+.product > ol > li {padding: 5px 0; text-align:left;}
+
+.product > button {border: 0; margin: 15px 0; background-color: #f1c40f; font-weight: 400; padding:1em 5em; font-family:raleway;}
+.product > button:hover {background-color: orange; transition: 1s all ease;}
+
+/* CONTACT */
+.email,.phone{display:block; padding-left:0.5em;}
+.email:before{content:'\2709 '; padding-right:0.5em;}
+.phone:before{content:'\260E '; padding-right:0.5em;}
+#support div{background:#eee; width:calc(50% - 3em); padding:3em 1em; float:left; margin:0.5em; height:25vh; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; border-radius: 0.5em;}
+#support p{padding:0.5em;}
+#support input{ background:#eee; border:1px solid #ccc; padding:1em; font-family:raleway; width:15vw;}
+#support input[type="submit"]{width:5vw; background:rgba(11,120,189,100); color:#fff; border:none;-webkit-border-radius: 0.3em; -moz-border-radius: 0.3em; border-radius: 0.3em;}
+
+/* FOOTER */
+footer{background:#eee; text-align:center; font-family:"raleway"; margin:0; padding:0.5em; display:block; width:calc(100%-1em); z-index:999; position:relative; bottom:0;}
+footer li{display:inline; border-left:1px solid #ccc;}
+footer li:first-child{border:none;}
+footer a{text-decoration:none; color:#aaa; padding:0 1em;}
+footer a:hover{color:rgba(11,120,189,100); transition:1s all ease;}
+footer span{color:#ccc; font-size:.9em; margin-left:2.7em;}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  #pricing {flex-direction: column;}
+  .product {max-width: 300px; width: 100%; margin: 0 auto; margin-bottom: 10px;}
+}
